@@ -1,7 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:buoi10/baiTapText1.dart';
+import 'package:buoi10/card.dart';
+import 'package:buoi10/image.dart';
+import 'package:buoi10/icon.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:buoi10/column.dart';
 
 void main() {
   runApp(DevicePreview(
@@ -20,9 +23,12 @@ class MyApp extends StatelessWidget {
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Profile Card'),
+        ),
         // backgroundColor: Colors.blue,
         body: SafeArea(
-          child: MyWidget(),
+          child: baitap1Column(),
         ),
       ),
     );

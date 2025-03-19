@@ -36,7 +36,7 @@ class MyWidget extends StatelessWidget {
     return Container(
       width: 300,
       height: 300,
-      alignment: Alignment. ,
+      alignment: Alignment.center,
       decoration: BoxDecoration(
         color: Colors.blue,
         border: Border.all(color: Colors.red, width: 2),
